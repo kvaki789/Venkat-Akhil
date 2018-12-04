@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <!-- <h4 class="page-header">Interpolation Concept</h4>
+
+      <table class="table table-bordered table-stripped">
+
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Cost</th>
+          <th>Category</th>
+        </tr>
+
+        <tr>
+          <td>{{pro.id}}</td>
+          <td>{{pro.name}}</td>
+          <td>{{pro.cost}}</td>
+          <td>{{pro.category}}</td>
+        </tr>
+        
+      </table> -->
+             <h4 class="page-header">For Loop</h4>
+             <ul>
+               <li *ngFor="let p of products">{{p.name}}</li>
+             </ul>
+
+             <table class="table table-bordered table-hover">
+              
+              <thead>
+                 <tr>
+                   <th>Name</th><th>Cost</th><th>Category</th><th></th>
+                 </tr>
+               </thead>
+
+               <tbody>
+                 <tr *ngFor="let pro of products">
+                   <td>{{pro.name}}</td>
+                   <td>{{pro.cost}}</td>
+                   <td>{{pro.category}}</td>
+
+                   <td>
+                     <button class="btn btn-primary">Edit</button>
+                     <button class="btn btn-danger">Delete</button>
+
+                   </td>
+                 </tr>
+               </tbody>
+
+             </table>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h4 class="page-header">Interpolation Concept</h4>
+
+      <table class="table table-bordered table-stripped">
+
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Cost</th>
+          <th>Category</th>
+        </tr>
+
+        <tr>
+          <td><input name="id" [(ngModel)]="pro.id" /></td>
+          <td><input name="name" [(ngModel)]="pro.name" /></td>
+          <td><input name="cost" [(ngModel)]="pro.cost" /></td>
+          <td><input name="category" [(ngModel)]="pro.category" /></td>
+        </tr>
+        
+      </table>
+
+    </div>
+
+  </div>
+
+</div> -->
